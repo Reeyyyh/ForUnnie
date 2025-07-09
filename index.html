@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Untuk unnie</title>
+    <link rel="icon" type="image/png" href="./src/assets/img/favicon/sunflower.png" />
+    <link href="./src/css/output.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body class="relative bg-pink-100 flex justify-center items-center min-h-screen overflow-hidden">
+
+    <!-- Animasi latar belakang -->
+    <div class="finisher-header absolute inset-0 w-full h-full -z-10"></div>
+
+    <!-- Konten utama -->
+    <div
+        class="bg-white p-10 rounded-2xl shadow-lg text-center animate-fade-in-up delay-700 duration-1000 max-w-lg w-full space-y-6">
+        <h1 id="heading-text" class="text-4xl md:text-5xl font-bold text-pink-600 mb-4 font-romantic h-8"></h1>
+
+        <p class="text-lg md:text-xl text-gray-700 mb-6 font-comfy leading-relaxed"></p>
+
+        <button id="nextBtn"
+            class="hidden opacity-0 duration-700 bg-pink-500 text-white py-2 px-4 rounded-full hover:scale-105 hover:bg-pink-600 transition font-comfy disabled:opacity-50 disabled:cursor-not-allowed">
+            Klik untuk lanjut
+        </button>
+
+        <div id="answerButtons" class="hidden space-x-4 opacity-0 transition-opacity duration-700">
+            <button id="yesBtn"
+                class="bg-green-500 text-white px-4 py-2 rounded-[12px] hover:bg-green-600 hover:scale-105 transition">IYA</button>
+            <button id="noBtn"
+                class="bg-red-500 text-white px-4 py-2 rounded-[12px] hover:bg-red-600 hover:scale-105 transition-all duration-200 ease-in-out cursor-not-allowed">TIDAK</button>
+        </div>
+
+    </div>
+
+    <script type="module" src="./src/js/index.js"></script>
+
+</body>
+
+</html>

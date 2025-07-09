@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Jangan di dalam @layer utilities */
+@keyframes flowerUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh) scale(0.5);
+        opacity: 0;
+    }
+}
+
+@layer utilities {
+    .flower {
+        @apply fixed pointer-events-none z-[9999];
+    }
+}
