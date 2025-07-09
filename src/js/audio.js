@@ -16,5 +16,5 @@ export function playLoveSong() {
         } else {
             clearInterval(fadeIn);
         }
-    }, 250);
+    }, 200);
 }

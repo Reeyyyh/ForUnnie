@@ -91,7 +91,14 @@ yesBtn.addEventListener('click', () => {
             paragraph.appendChild(secondText);
 
             typeParagraph("Makasihh yaa sudah nerima gemink😚🥰", secondText);
-        }, 1500); // Delay sedikit agar muncul setelah GIF
+        }, 1500);
+        setTimeout(() => {
+            const secondText = document.createElement('p');
+            secondText.classList.add('text-green-600', 'text-2xl', 'font-bold', 'mt-4', 'text-center');
+            paragraph.appendChild(secondText);
+
+            typeParagraph("(UDAHH YA GEMINKK MALUUU😭)", secondText);
+        }, 1500);
     });
 
     playLoveSong();
