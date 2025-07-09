@@ -104,7 +104,7 @@ yesBtn.addEventListener('click', () => {
     playLoveSong();
 
     // Efek bunga 10 kali dengan jeda
-    let times = 10;
+    let times = 33;
     let delay = 2500;
     for (let i = 0; i < times; i++) {
         setTimeout(() => {
